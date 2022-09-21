@@ -7,6 +7,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 
 @pytest.fixture
+
 def browser():
     #before tests
     global driver

@@ -2,6 +2,7 @@ from selenium.webdriver.common.by import By
 
 
 class AlertsPage:
+
     ALERT = (By.CSS_SELECTOR, '[onclick="jsAlert()"]')
     CONFIRM = (By.CSS_SELECTOR, '[onclick="jsConfirm()"]')
     PROMPT = (By.CSS_SELECTOR, '[onclick="jsPrompt()"]')

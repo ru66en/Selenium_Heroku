@@ -1,6 +1,7 @@
 from pages.javascript_alerts_page import AlertsPage
 from assertpy import assert_that
 from time import sleep
+from selenium.webdriver.common.keys import Keys
 
 
 def test_alert_accept(browser):
@@ -57,10 +58,14 @@ def test_prompt_accept_text(browser):
     alert_page.accept_alert()
     assert_that(alert_page.get_alert_result()).is_equal_to('You entered: Java Alerts')
 
+# ///// TEST SEND KEYS
+
+
 def test_prompt_accept_mytext(browser):
     alert_page = AlertsPage(browser)
     alert_page.load_page()
     alert_page.open_prompt()
+    alert_page.
     sleep(2)
     alert_page.accept_alert()
     assert_that(alert_page.get_alert_result()).is_equal_to('You entered:')

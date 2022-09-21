@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 
 
 class LoginPage:
-    #locators
+
     USERNAME_INPUT = (By.ID, 'username')
     PASSWORD_INPUT = (By.ID, "password")
     LOGIN_BUTTON = (By.CLASS_NAME, 'radius')
@@ -14,7 +14,6 @@ class LoginPage:
     FLASH_LOGOUT_TEXT = (By.ID, 'flash')
 
 
-    # URL
     URL = "https://the-internet.herokuapp.com/login"
 
     def __init__(self, browser):
