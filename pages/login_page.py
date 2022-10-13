@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 
 
 class LoginPage:
-
+    #LOCATORS
     USERNAME_INPUT = (By.ID, 'username')
     PASSWORD_INPUT = (By.ID, "password")
     LOGIN_BUTTON = (By.CLASS_NAME, 'radius')

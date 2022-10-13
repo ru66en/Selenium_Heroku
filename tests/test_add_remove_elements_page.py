@@ -9,6 +9,7 @@ def test_check_add_element_functionality(browser):
     add_remove_page.click_add_button()
     assert_that(add_remove_page.is_add_button_displayed())
 
+
 def test_check_add_remove_elements_page(browser):
     add_remove_page = AddRemoveElementsPage(browser)
     add_remove_page.load_page()
