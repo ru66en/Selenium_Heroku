@@ -1,3 +1,5 @@
+from assertpy import soft_assertions, assert_that
+
 from pages.dropdown_page import DropdownPage
 from time import sleep
 
@@ -19,3 +21,6 @@ def test_image(browser):
     dropdown_page = DropdownPage(browser)
     dropdown_page.load_page()
     dropdown_page.is_image_displayed()
+    with soft_assertions():
+        assert_that(dropdown_page.is_image_displayed())
+    sleep(3)
