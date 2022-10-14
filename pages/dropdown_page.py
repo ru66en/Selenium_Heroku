@@ -25,6 +25,9 @@ class DropdownPage:
         select_option = Select(self.browser.find_element(*self.SELECT_OPTION))
         select_option.select_by_visible_text(option)
 
+    def is_value_selected(self, value):
+        return self.browser.find_element(By.CSS_SELECTOR, f'[value="{value}"][selected="selected"]').is_displayed()
+
 
 
 

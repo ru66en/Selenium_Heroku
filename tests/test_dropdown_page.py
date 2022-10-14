@@ -12,7 +12,7 @@ def test_select_option(browser):
     dropdown_page = DropdownPage(browser)
     dropdown_page.load_page()
     dropdown_page.select_option('Option 1')
-    sleep(5)
+    assert dropdown_page.is_value_selected("1")
 
 
 def test_image(browser):
